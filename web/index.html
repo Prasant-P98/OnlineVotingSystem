@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select Your Favorite Subject</h2>
+        <form action="VoteServlet" method="POST">
+            <div class="option-group">
+                <label>
+                    <input type="radio" name="subject" value="Java Programming" required> Java Programming
+                </label>
+            </div>
+            <div class="option-group">
+                <label>
+                    <input type="radio" name="subject" value="Python Programming"> Python Programming
+                </label>
+            </div>
+            <div class="option-group">
+                <label>
+                    <input type="radio" name="subject" value="Web Development (HTML/CSS/JS)"> Web Development (HTML/CSS/JS)
+                </label>
+            </div>
+            <div class="option-group">
+                <label>
+                    <input type="radio" name="subject" value="Data Structures & Algorithms"> Data Structures & Algorithms
+                </label>
+            </div>
+            
+            <button type="submit" class="btn">Cast Vote</button>
+            <a href="ResultServlet" class="btn btn-secondary">View Results</a>
+        </form>
+    </div>
+</body>
+</html>
